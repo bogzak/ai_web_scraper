@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
     MODEL = "gpt-4o"
 
-    client = OpenAI(OPENAI_API_KEY)
+    client = OpenAI(api_key=OPENAI_API_KEY)
 
     html_content = scrape_html(URL)
     input_tokens = count_tokens(html_content, MODEL)
