@@ -66,7 +66,7 @@ if __name__ == "__main__":
 
     client = OpenAI(api_key=OPENAI_API_KEY)
 
-    html_content = scrape_html(URL)
+    html_content = scrape_html("https://r.jina.ai/" + URL)
     input_tokens = count_tokens(html_content, MODEL)
 
     # Извлечение информации
