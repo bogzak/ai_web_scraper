@@ -2,7 +2,6 @@ import tiktoken
 import requests
 import json
 from openai import OpenAI
-import time
 from typing import Dict, Any
 from dotenv import dotenv_values
 
